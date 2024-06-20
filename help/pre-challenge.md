@@ -33,6 +33,8 @@ Are you stuck and Copilot's not helping? Here's a hint to get you started.
     GRANT ALL PRIVILEGES ON DATABASE copilotlab TO myuser;
     ```
 
+**Note:** replace `myuser` with your username.
+
 Once you have created this new database you should update your connection settings to use this new database and reconnect.
 
 You can check which database you are connected to by running the following SQL command:

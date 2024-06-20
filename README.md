@@ -42,22 +42,24 @@ Stuck? Check out the [pre-challenge lab help](help/pre-challenge.md) for a hint.
 
 In the sample-data folder you will find three CSV files:
 
-- addresses.csv - This file contains a list of addresses with the street, city, state, and postal code.
-- customer.csv - This file contains a list of customers with their name, email address, and the date they became a customer.
-- orders.csv - This file contains a list of orders with the order number, the customer who placed the order, the date the order was placed, and the total amount of the order.
+- [address.csv](sample-data/address.csv) - This file contains a list of addresses with the street, city, state, and postal code.
+- [customer.csv](sample-data/customer.csv) - This file contains a list of customers with their name, email address, and the date they became a customer.
+- [order.csv](sample-data/order.csv) - This file contains a list of orders with the order number, the customer who placed the order, the date the order was placed, and the total amount of the order.
 
 Using these three files and GitHub Copilot, create the tables required to store this data in your database.
 
 Make sure to create foreign key constraints where appropriate.
-
-Ensure that you have documentation in the SQL file that explains the purpose of each table and the relationships between the tables.
 
 > [!TIP]
 > Try using Copilot Chat and file referencing.
 
 Once you have created the SQL make sure to save the file. Call it `lab1.sql`.
 
+Ensure that you have documentation in the SQL file that explains the purpose of each table and the relationships between the tables.
+
 While you can bulk insert the data from the CSV files, you don't need to do this for this lab. Use GitHub Copilot to create `INSERT` statements to insert the data from each CSV.
 
 > [!TIP]
 > Did you run into `-- More rows...` or a similar response from Copilot and didn't get the SQL for all the rows? You are likely experiencing the token limit for the large language model that sits behind Copilot. Try clearing your Chat history using `/clear` and trying again.
+
+Stuck? Check out the [lab 1 help](help/lab1.md) for hints.
