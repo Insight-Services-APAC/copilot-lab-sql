@@ -63,3 +63,31 @@ While you can bulk insert the data from the CSV files, you don't need to do this
 > Did you run into `-- More rows...` or a similar response from Copilot and didn't get the SQL for all the rows? You are likely experiencing the token limit for the large language model that sits behind Copilot. Try clearing your Chat history using `/clear` and trying again.
 
 Stuck? Check out the [lab 1 help](help/lab1.md) for hints.
+
+## Lab 2: Building Database Logic
+
+Now we have a database defined, let's create some logic to interact with the data.
+
+You may be familiar with database views, stored procedures, and triggers. These are all ways to interact with the data in the database.
+
+### Create a view
+
+Create a view that shows that shows customer orders and which doesn't include the customer's ID.
+
+Once you've created the view, ask Copilot to update the definition so it includes the Customer ID field and that orders are grouped by customer.
+
+> [!TIP]
+> If you run into issues, make sure to use GitHub Copilot chat to help identify how to fix them. You should be able to create and update the view without needing to write the SQL from scratch.
+
+### Create a stored procedure or function
+
+Before you implement a solution for this brief, ask GitHub Copilot Chat what the differences are between a stored procedure and a function.
+
+Once you understand the differences, create a solution for these scenarios:
+
+- Provide a way to get the total number of orders for a customer.
+- Provide a way to get the total value of orders for a customer.
+
+Once you've created the stored procedure or function, see if you can optimise the resulting SQL. What changes does Copilot suggest? Are they valid?
+
+Stuck? Check out the [lab 21 help](help/lab2.md.md) for hints.
