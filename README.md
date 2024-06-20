@@ -91,3 +91,24 @@ Once you understand the differences, create a solution for these scenarios:
 Once you've created the stored procedure or function, see if you can optimise the resulting SQL. What changes does Copilot suggest? Are they valid?
 
 Stuck? Check out the [lab 21 help](help/lab2.md.md) for hints.
+
+## Lab 3: Debugging SQL
+
+In this lab, you will be given a SQL file that contains a query that is not working as expected. Your task is to identify the issue and fix it.
+
+The SQL file is called [lab3.sql](sample-data/lab3.sql) and is located in the `sample-data` folder. The query is designed to run against a database that has had the tables created in Lab 1. The query is shown below.
+
+```sql
+SELECT C.Firstname, A.AddressLine1, A.AddressLine2, A.City, A.State, A.ZipCode
+FROM Customer AS C
+JOIN Address AS A ON CustomerID = A.CustomerID
+WHERE A.IsShippingAddress = TRUE AND A.IsBillingAddress = FALSE;
+ORDER BY C.Firstname
+GROUP BY A.City 
+```
+
+First up, try opening the SQL file and executing the query. If it doesn't run as expected, use GitHub Copilot to help identify the issue and fix it. There may be more than one problem with the query.
+
+> [!TIP]
+> Depending on the database server you are using you might need to copy/paste any errors you receive into the chat to get help from Copilot. If you are using the command-line you could try out the `@terminal` agent.
+
