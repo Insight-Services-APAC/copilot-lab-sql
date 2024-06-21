@@ -90,7 +90,7 @@ Once you understand the differences, create a solution for these scenarios:
 
 Once you've created the stored procedure or function, see if you can optimise the resulting SQL. What changes does Copilot suggest? Are they valid?
 
-Stuck? Check out the [lab 21 help](help/lab2.md.md) for hints.
+Stuck? Check out the [lab 2 help](help/lab2.md) for hints.
 
 ## Lab 3: Debugging SQL
 
@@ -112,3 +112,4 @@ First up, try opening the SQL file and executing the query. If it doesn't run as
 > [!TIP]
 > Depending on the database server you are using you might need to copy/paste any errors you receive into the chat to get help from Copilot. If you are using the command-line you could try out the `@terminal` agent.
 
+Stuck? Check out the [lab 3 help](help/lab3.md) for hints.
