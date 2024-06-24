@@ -20,6 +20,9 @@ If you cannot run a local PostgreSQL instance, consider using a cloud-based serv
 
 You can complete the labs without access to a server, but you will not be able to run the SQL commands to see the results and validate that the code works as expected.
 
+> [!IMPORTANT]
+> GitHub Copilot Individual and Business works by referencing files held locally on your computer or in a Codespace. At time of writing GitHub Copilot does not support connecting to a database server to obtain additional context such as your database engine vendor and version or any deployed artefacts (schemas, tables, etc). Keep this in mind when working with SQL and GitHub Copilot.
+
 ---
 
 ### Pre-lab challenge
