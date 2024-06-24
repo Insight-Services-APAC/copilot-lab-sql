@@ -2,6 +2,8 @@
 
 ## Fixing a query
 
+If you find that the `GROUP BY` clause is lost, make sure to explicitly require that it is retained (along with the `ORDER BY`) in your prompt.
+
 You'll find a final solution (which may differ from yours) in the [lab3-fixedquery-solution.sql](lab3-fixedquery-solution.sql).
 
 ## Modifying the Customer table

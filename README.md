@@ -112,7 +112,7 @@ ORDER BY C.Firstname
 GROUP BY A.City 
 ```
 
-First up, try opening the SQL file and executing the query. If it doesn't run as expected, use GitHub Copilot to help identify the issue and fix it. There may be more than one problem with the query.
+First up, try opening the SQL file and executing the query. If it doesn't run as expected, use GitHub Copilot to help identify the issue and fix it. There may be more than one problem with the query. Make sure that any solution you provide includes both an `ORDER BY` and a `GROUP BY` clause.
 
 > [!TIP]
 > Depending on the database server you are using you might need to copy/paste any errors you receive into the chat to get help from Copilot. If you are using the command-line you could try out the `@terminal` agent.
@@ -125,7 +125,7 @@ Make sure to update the `lab1-solution.sql` file with the updated `Customer` tab
 
 ### Fixing a stored procedure
 
-The below stored procedure runs fine but has some issues that have cause odd behaviour in the application. You can find a copy of this stored procedure in the [lab3-sproc.sql](sample-data/lab3-sproc.sql) file located in the `sample-data` folder. The issues highlighted are:
+The below stored procedure runs fine but has some issues that have caused odd behaviour in the application using it. You can find a copy of this stored procedure in the [lab3-sproc.sql](sample-data/lab3-sproc.sql) file located in the `sample-data` folder. The issues highlighted are:
 
 - Any data can be inserted into the `EmailAddress` field without validation.
 - If a non-existent customer ID is passed, the provided data is lost and no error is returned.
