@@ -97,9 +97,9 @@ Stuck? Check out the [lab 2 help](help/lab2.md) for hints.
 
 ## Lab 3: Debugging SQL
 
-In this lab, you will be given a SQL file that contains a query that is not working as expected. Your task is to identify the issue and fix it.
+In this lab, you will be given a SQL file that contains a query that is not working as expected. Your task is to use GitHub Copilot to identify the issues and fix them.
 
-The SQL file is called [lab3.sql](sample-data/lab3.sql) and is located in the `sample-data` folder. The query is designed to run against a database that has had the tables created in Lab 1. The query is shown below.
+The SQL file is called [lab3-query.sql](sample-data/lab3-query.sql) and is located in the `sample-data` folder. The query is designed to run against a database that has had the tables created in Lab 1. The query is shown below.
 
 ```sql
 SELECT C.Firstname, A.AddressLine1, A.AddressLine2, A.City, A.State, A.ZipCode
@@ -115,4 +115,47 @@ First up, try opening the SQL file and executing the query. If it doesn't run as
 > [!TIP]
 > Depending on the database server you are using you might need to copy/paste any errors you receive into the chat to get help from Copilot. If you are using the command-line you could try out the `@terminal` agent.
 
+### Modifying the Customer table
+
+In order to complete this next lab step, you will need to modify the `Customer` table to include a `EmailAddress` field. Use GitHub Copilot to generate the SQL to add this field to the table and to set the default to `NULL`. This field should hold case insensitive text. If your database server does not support case insensitive text, use a `VARCHAR(254)` field instead.
+
+Make sure to update the `lab1-solution.sql` file with the updated `Customer` table definition so you can use it in future exercises. Save the updated file as `lab3-solution.sql`.
+
+### Fixing a stored procedure
+
+The below stored procedure runs fine but has some issues that have cause odd behaviour in the application. You can find a copy of this stored procedure in the [lab3-sproc.sql](sample-data/lab3-sproc.sql) file located in the `sample-data` folder. The issues highlighted are:
+
+- Any data can be inserted into the `EmailAddress` field without validation.
+- If a non-existent customer ID is passed, the provided data is lost and no error is returned.
+
+```sql
+CREATE OR REPLACE FUNCTION update_existing_customer_email(customer_id UUID, new_email CITEXT)
+RETURNS VOID AS $$
+BEGIN
+    -- Update the customer's email address
+    UPDATE Customer
+    SET EmailAddress = new_email
+    WHERE CustomerID = customer_id;
+END;
+$$ LANGUAGE plpgsql;
+```
+
+You can test out this stored procedure by running the below SQL:
+
+```sql
+-- No error is returned
+SELECT update_customer_email('7f1cf3dd-2281-41ec-8847-bab8411dbc6d', 'myemailaddress');
+-- The data provided does not appear in the table
+SELECT * from Customer;
+```
+
+Using GitHub Copilot, address the two highlighted issues and then validate the stored procedure works as expected by attempting to:
+
+- Update the email address for a customer that doesn't exist (provide a GUID not listed in the table).
+- Update the email address for a customer with an invalid email address (e.g. `myemailaddress`).
+
 Stuck? Check out the [lab 3 help](help/lab3.md) for hints.
+
+## Lab 4: Understanding SQL
+
+Coming soon!
