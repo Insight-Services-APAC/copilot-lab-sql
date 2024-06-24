@@ -8,9 +8,9 @@ You'll find a final solution (which may differ from yours) in the [lab3-fixedque
 
 ## Modifying the Customer table
 
-The solution to this may vary based on your selected database server. Not all servers provide a case insensitive text type. Where it isn't supported, create a varchar(254) field instead.
+The solution to this may vary based on your selected database server. Not all servers provide a case insensitive text type. Where it isn't supported, create a `VARCHAR(254)` field instead.
 
-For PostgreSQL if you are trying to use the `CITEXT` extension type, you will need to install the extension first. For Azure Database for PostgreSQL you can do this by following the process listed on [Microsoft Learn](https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-extensions).
+For PostgreSQL if you are trying to use the `CITEXT` extension type, you may need to install the extension first. For Azure Database for PostgreSQL you can do this by following the process listed on [Microsoft Learn](https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-extensions).
 
 You'll find a final solution (which may differ from yours) in the [lab3-newfield-solution.sql](lab3-newfield-solution.sql).
 
