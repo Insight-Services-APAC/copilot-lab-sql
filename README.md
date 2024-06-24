@@ -97,7 +97,9 @@ Stuck? Check out the [lab 2 help](help/lab2.md) for hints.
 
 ## Lab 3: Debugging SQL
 
-In this lab, you will be given a SQL file that contains a query that is not working as expected. Your task is to use GitHub Copilot to identify the issues and fix them.
+In this lab, you will be given a a series of SQL-related problems and your task is to use GitHub Copilot to identify the issues and fix them.
+
+### Fixing a query
 
 The SQL file is called [lab3-query.sql](sample-data/lab3-query.sql) and is located in the `sample-data` folder. The query is designed to run against a database that has had the tables created in Lab 1. The query is shown below.
 
