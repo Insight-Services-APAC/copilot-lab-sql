@@ -1,8 +1,8 @@
 # GitHub Copilot lab for SQL
 
-A hands-on lab to introduce people to working with GitHub Copilot and SQL
+A hands-on lab to introduce people to working with GitHub Copilot and Structured Query Language (SQL). You do not need to be an experienced SQL developer to complete this lab!
 
-**Proposed duration**: 40-60 minutes (excluding prerequisites setup)
+**Proposed duration**: 40-60 minutes (excluding prerequisites setup).
 
 ## Prerequisites
 
@@ -167,7 +167,7 @@ Stuck? Check out the [lab 3 help](help/lab3.md) for hints.
 
 ### Generating an Entity Relationship (ER) diagram
 
-In this lab, you will use GitHub Copilot to generate an ER diagram for the tables you created in Lab 1. The ER diagram should be created as a [Mermaid diagram](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) that can be embedded in a markdown file and should include the table names and field data types (but not the field properties such as size or constraints). 
+In this lab, you will use GitHub Copilot to generate an ER diagram for the tables you created in Lab 1. The ER diagram should be created as a [Mermaid diagram](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) that can be embedded in a markdown file and should include the table names and field data types (but not the field properties such as size or constraints).
 
 A sample is shown below (you will need the appropriate Mermaid extension for Visual Studio Code to view this locally).
 
@@ -195,7 +195,7 @@ Use GitHub Copilot to explain what each query does and how it works. You can com
 
 Check out the [lab 4 help](help/lab4.md) for hints and solutions.
 
-## That's a wrap!
+## That's a wrap
 
 Thanks for completing the GitHub Copilot lab for SQL. We hope you enjoyed working with GitHub Copilot and SQL and that you learned something new. Please check out our list of labs and resources for more hands-on learning experiences on our [GitHub repository](https://github.com/Insight-Services-APAC/github-copilot-labs-list).
 
