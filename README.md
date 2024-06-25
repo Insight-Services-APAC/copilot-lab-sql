@@ -6,12 +6,14 @@ A hands-on lab to introduce people to working with GitHub Copilot and Structured
 
 ## Prerequisites
 
-- [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)**
 - [GitHub Copilot](https://copilot.github.com/) installed and licensed
 - [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) extension for Visual Studio Code
 - [SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
 - [SQLTools PostgreSQL driver](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-pg) (or driver for your selected database server)
 - PostgreSQL database server (or another database server of your choice) with an empty database (or permissions to create a new database).
+
+** You can also consider using [Azure Data Studio](https://learn.microsoft.com/azure-data-studio/download-azure-data-studio) which also supports GitHub Copilot and PostgresSQL via extensions.
 
 ### Database server
 
