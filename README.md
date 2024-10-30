@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> **NOTE:** This content is now maintained in the [GitHub-Insight-ANZ-Lab/copilot-lab-sql](https://github.com/GitHub-Insight-ANZ-Lab/copilot-lab-sql) repository
+>
 # GitHub Copilot lab for SQL
 
 A hands-on lab to introduce people to working with GitHub Copilot and Structured Query Language (SQL). You do not need to be an experienced SQL developer to complete this lab!
